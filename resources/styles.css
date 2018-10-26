@@ -1,0 +1,151 @@
+body{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+/* Let us align the page to be centered, and give a certain font to it */
+a {
+  list-style-type: none;
+}
+/* This will allow the list type to not have any dots */
+nav {
+  text-align: center;
+}
+/* Let us aligh the navigation elements also to be centered */
+
+nav img {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+/* let us center the logo image with the margin property of 0 and auto.
+We will also make it a block element to seperate that from the span elements.
+Lastly give it a width of 180px */
+
+nav span {
+  display: block;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+/* Here we will also give some styling to the span elements of the nav. We will
+make each span its own block element. Give each the same appropriate fotn styling
+and margin of top and bottom to be 10px. */
+
+nav a {
+  color: #666666;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  margin: 10px auto;
+  overflow: scroll;
+}
+
+/* Here we give the content or the main piece of the webpage the full width.
+let us give it a height of 500px. We will also give the top and bottom margin of
+10px with left and right to be auto. We will also provide a scroll overflow such
+that the user is able to scroll as the content extends downward. */
+
+/* CONTENT HEADER */
+.header {
+  background-image: url("the-delicious-cakes.jpg");
+  background-position: center;
+  background-size: cover;
+  height:400px;
+}
+
+/* Here we added the background-image and making it centered, but also to cover
+the entire section and a specific height of 400px; */
+
+.header h1 {
+  background-color: maroon;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  width: 68%;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* For ths h1 of the header we need to make it stand out and be within the image.
+To do this we give it a back ground color but also some font styling. Again we
+add the margin proprty to align it center with 0 and auto. We add additional
+padding to put a invisible border and give some line height to the element. */
+
+/*CONTENT BODY SECTION*/
+.content .food {
+  width: 90%;
+  margin: 0 auto;
+}
+/* will give the content a given width and we will set a margin to center.
+This for the class name of food.*/
+
+.food p {
+  color: #333333;
+  font-weight: 100;
+  line-height: 34px;
+  width: 90%;
+  margin-top: 18px; /* this is to give space between previos element and this element.*/
+}
+
+/* now let us play with the button */
+
+.button {
+  border-radius: 4px;
+  color: maroon;
+  display: block;
+  font-weight: 700;
+  width: 200px;
+  padding: 20px;
+  margin: 40px auto;
+  border: 1px solid black;
+}
+
+/* Here we display block, give it color, give a radius to the border, along with
+some padding and margin and a border. */
+/*Give the button some more stying, when hovering over*/
+.button:hover {
+  background-color: maroon;
+  border: 1px solid maroon;
+  color: #FFF;
+}
+
+
+/* Now lets us play with the list of nutrition*/
+
+ul.nutrition {
+  padding: 20px;
+}
+/* Give some padding to the nutrition list */
+
+ul.nutrition li {
+  display: inline-block;
+  background-color: maroon;
+  list-style: none;
+  width: 200px;
+  padding: 10px 20px;
+  margin-bottom: 3px;
+}
+/* Give the li items some padding, margin, width, color and make them display
+inline-block*/
+
+.nutrition .category {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  display: block;
+}
+/* To seperate category from value we will display both as block elements so
+they are not in the same line inside the li. Also we will give additional
+styling to font and color. */
+
+.nutrition .value {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
